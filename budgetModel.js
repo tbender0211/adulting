@@ -3,6 +3,10 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var BudgetSchema = new Schema({
+    Month: {
+        type: String,
+        trim: true
+    },
     Rent: {
         type: Number,
         trim: true
